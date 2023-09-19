@@ -43,9 +43,27 @@ const questions = [
         question: 'How do you declare a "Function" in Javascript?',
         options: ['Func()', 'Function functionName', 'function functionName() {}', 'function variableName'],
         correctAnswer: 'function functionName() {}', 
-    }
-    
-    //need to add more questions(shooting for 10)
+    },
+    {   //q7
+        question: 'Which answer is boolean?',
+        options: ['Ten', '10', '10=boolean', 'var ten=true'],
+        correctAnswer: 'var ten=true', 
+    },
+    {   //q8
+        question: 'How would you add a comment in JavaScript?',
+        options: ['//', '/', '/.', './'],
+        correctAnswer: '//',
+    },
+    {   //q9
+        question: 'Which data structure is used to store a collection of values in JavaScript?',
+        options: ['Object', 'Function', 'String', 'Array'],
+        correctAnswer: 'Array',
+    },
+    {   //q10
+        question: 'What does an "if" statement in JavaScript do?',
+        options: ['Defnines a function', 'Creates a loop', 'Executes a block of code conditionally', 'Declares the variable "if"'],
+        correctAnswer: 'Array',
+    },
 ];
 
 let countdown;
@@ -86,6 +104,7 @@ function displayNextQuestion() {
     } 
     else 
     {
+        //set time here
         endGame();
     }
 }
@@ -121,10 +140,10 @@ function answerQuestion(selectedOption) {
         } 
         else 
         {
-            timeLeft -= 10;
+            timeLeft = timeLeft - 10;
         }
     }
-
+console.log(timeLeft)
     currentQuestionIndex++;
     displayNextQuestion();
 }
@@ -148,7 +167,7 @@ startButton.addEventListener('click', startQuiz);
 saveScoreButton.addEventListener('click', saveScore);
 retakeBtn.addEventListener('click', retakeQuiz);
 clearScoresBtn.addEventListener('click', clearScores);
-// You can add event listeners for answering questions here
+
 function saveScore(){
 
     var existingScores = JSON.parse(localStorage.getItem("highScores"));
