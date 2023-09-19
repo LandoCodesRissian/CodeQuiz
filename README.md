@@ -15,7 +15,7 @@ N/a
 
 
 ## Credits
-If it weren't for my brother in law this probably wouldn't be working
+If it weren't for my brother in law this probably wouldn't be working, Helped me troubleshoot basically everything I could not get working correctly.
 
 ## License
 Mit license
