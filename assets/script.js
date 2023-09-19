@@ -62,7 +62,7 @@ const questions = [
     {   //q10
         question: 'What does an "if" statement in JavaScript do?',
         options: ['Defnines a function', 'Creates a loop', 'Executes a block of code conditionally', 'Declares the variable "if"'],
-        correctAnswer: 'Array',
+        correctAnswer: 'Executes a block of code conditionally',
     },
 ];
 
